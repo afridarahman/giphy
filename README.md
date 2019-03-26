@@ -25,12 +25,12 @@ Make sure to check off your items as you complete them. [ ] => [x]
 
 ## Day 2
 ### JS
-- [ ] Take user input from the input box when button is clicked
-- [ ] Update the API request url based on user input
-- [ ] Display the image to the screen
+- [x] Take user input from the input box when button is clicked
+- [x] Update the API request url based on user input
+- [x] Display the image to the screen
 
 ### Wrap
-- [ ] Push your changes!
+- [x] Push your changes!
 
 
 ## Day 3
