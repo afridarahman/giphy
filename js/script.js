@@ -5,12 +5,13 @@
 
 $("#search-button").click(function(){
     var searchTerm = $('#search-term').val();
-    var giphyAPI = "https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&rating=pg&api_key=dc6zaTOxFJmzC";
+    var giphyAPI = "https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=dc6zaTOxFJmzC";
     $.ajax({
         url: giphyAPI,
         method: "GET",
         success: function(response) {
-            var gifURL = response.data[0].images.fixed_width.url;
+            var randomNum = Math.floor(Math.random()*(response.data.length));
+            var gifURL = response.data[randomNum].images.original.url;
             $('.text-center').html('<img src =' + gifURL + '/>');
         }
     });
